@@ -1,0 +1,23 @@
+body {
+    background-color: #595959;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    gap: 1200px; 
+    padding: 0px;
+}
+
+.parteSuperiorDerecha {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img {
+    width: 75px;
+    height: 75px;
+}
