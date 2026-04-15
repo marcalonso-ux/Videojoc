@@ -166,26 +166,113 @@ button:hover {
 }
 
 
+#fila {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    color: white;
+}
+
+.podio-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.podio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 12px;
+    width: 140px;
+    text-align: center;
+    color: black;
+    transition: 0.3s;
+}
+
+.podio-item:hover {
+    transform: translateY(-5px);
+}
+
+.oro { 
+    background: linear-gradient(180deg, #ffd700, #ff8c00); 
+    height: 180px; 
+    order: 2; 
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+}
+
+.plata { 
+    background: linear-gradient(180deg, #e0e0e0, #9e9e9e); 
+    height: 140px; 
+    order: 1; 
+}
+
+.bronce { 
+    background: linear-gradient(180deg, #cd7f32, #8b4513); 
+    height: 120px; 
+    order: 3; 
+}
+
+.avatar {
+    font-size: 22px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.podio-item .nombre { 
+    font-weight: bold; 
+    font-size: 1.1em; 
+    margin-bottom: 5px;
+}
+
+.podio-item .puntos { 
+    font-size: 0.9em; 
+    opacity: 0.9;
+}
+
 .fila {
     display: grid;
     grid-template-columns: 50px 1fr repeat(4, 60px);
     align-items: center;
     background: linear-gradient(90deg, #1a1a1a, #2a2a2a);
     margin: 10px 0;
-    padding: 10px;
+    padding: 12px 20px;
     border-left: 5px solid #00ffcc;
+    border-radius: 0 8px 8px 0;
     transition: 0.3s;
 }
 
 .fila:hover {
     transform: scale(1.02);
     background: linear-gradient(90deg, #ff1a1a, #d60000);
+    border-left: 5px solid #ffffff;
+    cursor: pointer;
 }
 
-.top {
-    background: linear-gradient(90deg, gold, orange);
-    color: black;
+.fila span {
+    font-size: 0.95em;
+}
+
+.fila span:last-child {
     font-weight: bold;
+    color: #00ffcc;
+}
+
+.fila:hover span:last-child {
+    color: white;
 }
 
 .pos {
