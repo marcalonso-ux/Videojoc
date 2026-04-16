@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
 
     const menu = document.querySelector(".main-menu");
@@ -26,7 +25,7 @@ async function obtenerClasificacion() {
         const todos = json.data;
 
         const contenedor = document.getElementById('fila');
-        
+
         if (!contenedor) return;
 
         let htmlPodio = `<div class="podio-container">`;
@@ -39,7 +38,7 @@ async function obtenerClasificacion() {
             const jug = todos[posIndex];
             if (jug) {
                 const claseCss = posIndex === 0 ? 'oro' : (posIndex === 1 ? 'plata' : 'bronce');
-                
+
                 htmlPodio += `
                     <div class="podio-item ${claseCss}">
                         <div class="avatar">${posIndex + 1}º</div>
@@ -69,4 +68,4 @@ async function obtenerClasificacion() {
 }
 
 document.addEventListener('DOMContentLoaded', obtenerClasificacion);
-    obtenerClasificacion();
+obtenerClasificacion();
