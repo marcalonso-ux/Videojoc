@@ -144,9 +144,410 @@ button:hover {
     transform: scale(1.05);
 }
 
-footer {
+
+
+
+
+   /* 2n cla */
+
+.leaderboard {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    color: white;
+    font-family: Arial;
+}
+
+.leaderboard h1 {
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+
+#fila {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    color: white;
+}
+
+.podio-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.podio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 15px;
-    font-size: 12px;
+    border-radius: 12px;
+    width: 140px;
+    text-align: center;
+    color: black;
+    transition: 0.3s;
+}
+
+.podio-item:hover {
+    transform: translateY(-5px);
+}
+
+.oro { 
+    background: linear-gradient(180deg, #ffd700, #ff8c00); 
+    height: 180px; 
+    order: 2; 
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+}
+
+.plata { 
+    background: linear-gradient(180deg, #e0e0e0, #9e9e9e); 
+    height: 140px; 
+    order: 1; 
+}
+
+.bronce { 
+    background: linear-gradient(180deg, #cd7f32, #8b4513); 
+    height: 120px; 
+    order: 3; 
+}
+
+.avatar {
+    font-size: 22px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.podio-item .nombre { 
+    font-weight: bold; 
+    font-size: 1.1em; 
+    margin-bottom: 5px;
+}
+
+.podio-item .puntos { 
+    font-size: 0.9em; 
+    opacity: 0.9;
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: 50px 1fr repeat(4, 60px);
+    align-items: center;
+    background: linear-gradient(90deg, #1a1a1a, #2a2a2a);
+    margin: 10px 0;
+    padding: 12px 20px;
+    border-left: 5px solid #00ffcc;
+    border-radius: 0 8px 8px 0;
+    transition: 0.3s;
+}
+
+.fila:hover {
+    transform: scale(1.02);
+    background: linear-gradient(90deg, #ff1a1a, #d60000);
+    border-left: 5px solid #ffffff;
+    cursor: pointer;
+}
+
+.fila span {
+    font-size: 0.95em;
+}
+
+.fila span:last-child {
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+.fila:hover span:last-child {
+    color: white;
+}
+
+.pos {
+    font-weight: bold;
+}
+
+.team {
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+   /* 2n cla */
+
+
+
+   /* 3n cla */
+
+
+   .hero-juego {
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+                url("imatges/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    text-align: center;
+}
+
+.hero-juego h1 {
+    font-size: 50px;
+    text-shadow: 0 0 20px red;
+}
+
+
+.descripcion {
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.descripcion h2 {
+    margin-bottom: 20px;
+}
+
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+.galeria {
+    padding: 40px;
+    text-align: center;
+}
+
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.imagenes img {
+    width: 100%;
+    border-radius: 10px;
+}
+/*
+@media (max-width: 768px) {
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenes {
+        grid-template-columns: 1fr;
+    }
+}*/
+
+   /* 3n cla */
+
+
+   /* info */
+
+  .info-juego {
+    padding: 80px 10%;
+    background: radial-gradient(circle at top left, #0a0f2c, #000000);
+}
+
+.bloque {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.bloque.reverse {
+    flex-direction: row-reverse;
+}
+
+.imagen img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.texto {
+    max-width: 500px;
+    color: white;
+}
+
+.texto h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.texto p {
+    font-size: 16px;
     color: #ccc;
+    margin-bottom: 20px;
+}
+
+.texto button {
+    background: #ff7a00;
+    padding: 12px 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/*
+@media (max-width: 768px) {
+
+    .bloque {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bloque.reverse {
+        flex-direction: column;
+    }
+
+    .imagen img {
+        width: 100%;
+    }
+}*/
+
+   /* info */
+
+/* podio */
+
+.podio {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    margin: 60px 0;
+}
+
+/* base jugador */
+.jugador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+}
+
+/* cajas */
+.caja {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* posiciones */
+.primero .caja {
+    height: 160px;
+    background: linear-gradient(45deg, gold, orange);
+    color: black;
+}
+
+.segundo .caja {
+    height: 120px;
+    background: linear-gradient(45deg, #3a86ff, #4361ee);
+}
+
+.tercero .caja {
+    height: 100px;
+    background: linear-gradient(45deg, #4895ef, #4cc9f0);
+}
+
+/* nombres */
+.jugador p {
+    margin-top: 10px;
+}
+
+.caja {
+    animation: subir 0.8s ease;
+}
+
+.caja {
+    animation: subir 0.8s ease;
+}
+
+@keyframes subir {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* podio */
+
+
+
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parteCentral {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .informacion h1 {
+        font-size: 35px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+
+    
+
+  
 }
