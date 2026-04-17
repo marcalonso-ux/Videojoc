@@ -1,6 +1,7 @@
 body {
     background-color: #595959;
     padding: 0px;
+    font-family: Verdana;
 }
 
 .main-menu {
@@ -12,12 +13,49 @@ body {
     width: 250px;
     height: 100%;
     transition: 0.3s;
-    z-index: 1000;
+    z-index: 999;
 }
 
 .main-menu.activo {
     left: 0;
 }
+
+.tresBotones {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.tresBotones:hover {
+    transform: scale(1.15) rotate(5deg);
+}
+
+.tresBotones:hover span {
+    background: #d60000;
+}
+
+.tresBotones span {
+    display: block;
+    height: 4px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+ul {
+    list-style: none;
+    /* Quita los puntos negros */
+    padding: 0;
+    /* Quita el espacio que dejan los puntos al irse */
+    margin: 0;
+}
+
+
+/* El overlay por defecto está escondido */
 
 .overlay {
     position: fixed;
@@ -25,44 +63,17 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    /* ESTO ES VITAL */
+    z-index: 998;
+    /* Debe ser mayor que el resto de la web */
+    pointer-events: auto;
+    /* Obliga a que acepte clics */
 }
 
 .overlay.activo {
-    opacity: 1;
-    visibility: visible;
-}
-
-.tresBtotnes {
-    width: 30px;
-    height: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-}
-
-.tresBtotnes span {
-    display: block;
-    height: 4px;
-    background: white;
-    border-radius: 2px;
-    transition: 0.3s;
-}
-
-.tresBtotnes.activo span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.tresBtotnes.activo span:nth-child(2) {
-    opacity: 0;
-}
-
-.tresBtotnes.activo span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
+    display: block !important;
 }
 
 .main-menu li a {
@@ -364,9 +375,6 @@ button:hover {
 
 
 /* 3n cla */
-
-
-
 
 
 /* podio */
