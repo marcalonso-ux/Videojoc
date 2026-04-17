@@ -366,76 +366,7 @@ button:hover {
 /* 3n cla */
 
 
-/* info */
 
-.info-juego {
-    padding: 80px 10%;
-    background: radial-gradient(circle at top left, #0a0f2c, #000000);
-}
-
-.bloque {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-    margin-bottom: 80px;
-}
-
-.bloque.reverse {
-    flex-direction: row-reverse;
-}
-
-.imagen img {
-    width: 500px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.texto {
-    max-width: 500px;
-    color: white;
-}
-
-.texto h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.texto p {
-    font-size: 16px;
-    color: #ccc;
-    margin-bottom: 20px;
-}
-
-.texto button {
-    background: #ff7a00;
-    padding: 12px 30px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-
-/*
-@media (max-width: 768px) {
-
-    .bloque {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .bloque.reverse {
-        flex-direction: column;
-    }
-
-    .imagen img {
-        width: 100%;
-    }
-}*/
-
-
-/* info */
 
 
 /* podio */
