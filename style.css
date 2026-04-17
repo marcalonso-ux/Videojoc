@@ -108,12 +108,131 @@ header {
     padding: 15px 20px;
 }
 
-.parteCentral {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*index prueba*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f0f1a;
+    color: white;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+
+
+@keyframes zoomHero {
+    from { transform: scale(1.1); }
+    to { transform: scale(1.2); }
+}
+
+
+.hero-bg {
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    background: url("imatges/foto.png") center/cover no-repeat;
+
+    transform: scale(1.1);
+    filter: blur(2px) brightness(0.6);
+
+    animation: zoomHero 10s ease-in-out infinite alternate;
+}
+
+
+
+/* CAPA OSCURA */
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.2));
+}
+
+/* CONTENIDO */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    max-width: 600px;
+}
+
+/* TITULO */
+.hero-content h1 {
+    font-size: 80px;
+    font-weight: 900;
+}
+
+/* TEMPORADA */
+.temporada {
+    margin: 20px 0;
+    padding: 8px 20px;
+    background: #ccc;
+    color: black;
+    border: 3px solid red;
+    display: inline-block;
+    transform: rotate(-2deg);
+}
+
+/* TEXTO */
+.hero-content p {
+    margin-bottom: 20px;
+}
+
+/* BOTONES */
+.botones {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary {
+    background: orange;
+    color: black;
+}
+
+.btn-secondary {
+    background: #ccc;
+    color: black;
+}
+
+/* SECCIÓN EXTRA */
+.info {
+    padding: 80px;
+    text-align: center;
+}
+
+
+/*index*/
 
 .informacion h1 {
     font-size: 40px;
