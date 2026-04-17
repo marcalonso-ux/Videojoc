@@ -13,28 +13,11 @@
         width: 250px;
         height: 100%;
         transition: 0.3s;
-        z-index: 1000;
+        z-index: 999;
     }
     
     .main-menu.activo {
         left: 0;
-    }
-    
-    .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.6);
-        opacity: 0;
-        visibility: hidden;
-        transition: 0.3s;
-    }
-    
-    .overlay.activo {
-        opacity: 1;
-        visibility: visible;
     }
     
     .tresBtotnes {
@@ -64,6 +47,34 @@
     
     .tresBtotnes.activo span:nth-child(3) {
         transform: rotate(-45deg) translate(6px, -6px);
+    }
+    
+    ul {
+        list-style: none;
+        /* Quita los puntos negros */
+        padding: 0;
+        /* Quita el espacio que dejan los puntos al irse */
+        margin: 0;
+    }
+    /* El overlay por defecto está escondido */
+    
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        /* ESTO ES VITAL */
+        z-index: 998;
+        /* Debe ser mayor que el resto de la web */
+        pointer-events: auto;
+        /* Obliga a que acepte clics */
+    }
+    
+    .overlay.activo {
+        display: block !important;
     }
     
     .main-menu li a {
@@ -133,7 +144,7 @@
     }
     
     button:hover {
-        background-color: #ff1a1a;
+        background-color: transparent;
         transform: scale(1.05);
     }
     
@@ -273,4 +284,31 @@
         gap: 15px;
         font-size: 1.2rem;
         color: #333;
+    }
+    
+    .fab {
+        height: 25px;
+        width: 25px;
+        margin-top: 15px;
+        display: inline-block;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    /* Nota que no hay espacio entre los puntos */
+    
+    .fab.fa-instagram {
+        background-image: url("imagenes/instagram.png");
+    }
+    
+    .fab.fa-linkedin {
+        background-image: url("imagenes/linkedin.webp");
+    }
+    
+    .fab.fa-twitter {
+        background-image: url("imagenes/x.png");
     }
