@@ -20,33 +20,30 @@
         left: 0;
     }
     
-    .tresBtotnes {
+    .tresBotones {
         width: 30px;
         height: 25px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
+        transition: transform 0.3s ease;
     }
     
-    .tresBtotnes span {
+    .tresBotones:hover {
+        transform: scale(1.15) rotate(5deg);
+    }
+    
+    .tresBotones:hover span {
+        background: #d60000;
+    }
+    
+    .tresBotones span {
         display: block;
         height: 4px;
         background: white;
         border-radius: 2px;
-        transition: 0.3s;
-    }
-    
-    .tresBtotnes.activo span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-    
-    .tresBtotnes.activo span:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .tresBtotnes.activo span:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
+        transition: 0.3s ease;
     }
     
     ul {

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const menu = document.querySelector(".main-menu");
-    const boton = document.querySelector(".tresBtotnes");
+    const boton = document.querySelector(".tresBotones");
     const overlay = document.querySelector(".overlay");
     const btnCerrar = document.querySelector(".btn-cerrar-menu"); // <--- NUEVO
 
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const menu = document.querySelector(".main-menu");
-    const boton = document.querySelector(".tresBtotnes");
+    const boton = document.querySelector(".tresBotones");
     const overlay = document.querySelector(".overlay");
 
     // 1. ABRIR EL MENÚ
