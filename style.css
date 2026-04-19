@@ -476,17 +476,7 @@ button:hover {
     text-shadow: 0 0 20px red;
 }
 
-.panel-comentario {
-    background: rgba(0,0,0,0.7);
-    border-radius: 15px;
-    padding: 30px;
-    max-width: 500px;
-    margin: auto;
 
-    box-shadow:
-        0 0 20px rgba(255,0,100,0.6),
-        0 0 40px rgba(168,85,247,0.4);
-}
 
 .form-comentario {
     display: flex;
