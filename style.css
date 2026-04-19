@@ -1,3 +1,11 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -89,7 +97,11 @@ ul {
     align-items: center;
 }
 
-img {
+.parteSuperiorDerecha img {
+    width: 75px;
+    height: 75px;
+}
+ {
     width: 75px;
     height: 75px;
 }
@@ -102,11 +114,6 @@ header {
 }
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 
 
@@ -388,94 +395,6 @@ button:hover {
 /* 2n cla */
 
 
-/* 3n cla */
-
-.hero-juego {
-    height: 300px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("imatges/fondo.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-.hero-juego h1 {
-    font-size: 50px;
-    text-shadow: 0 0 20px red;
-}
-
-.descripcion {
-    padding: 40px;
-    text-align: center;
-    color: white;
-}
-
-.descripcion h2 {
-    margin-bottom: 20px;
-}
-
-.cards {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
-.card {
-    background: #1a1a1a;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 200px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.card img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.galeria {
-    padding: 40px;
-    text-align: center;
-}
-
-.imagenes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-
-.imagenes img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-
-/*
-@media (max-width: 768px) {
-
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .imagenes {
-        grid-template-columns: 1fr;
-    }
-}*/
-
-
-/* 3n cla */
 
 
 /* podio */
@@ -542,9 +461,6 @@ button:hover {
     animation: subir 0.8s ease;
 }
 
-.caja {
-    animation: subir 0.8s ease;
-}
 
 @keyframes subir {
     from {
