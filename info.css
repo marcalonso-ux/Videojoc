@@ -128,7 +128,10 @@ ul {
 
 
 
-
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 .hero-juego {
     height: 500px;
@@ -328,9 +331,10 @@ html {
 
 @media (max-width: 768px) {
 
-    .bloque {
+   .bloque {
         flex-direction: column;
         text-align: center;
+        padding: 20px;
     }
 
     .bloque.reverse {
@@ -341,4 +345,32 @@ html {
         flex-direction: column;
         align-items: center;
     }
+
+        header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-box {
+        padding: 30px 20px;
+    }
+
+    .hero-box h1 {
+        font-size: 35px;
+    }
+
+    .info-juego {
+        gap: 50px;
+    }
+
+    
+
+    .texto h2 {
+        font-size: 24px;
+    }
+
+    .imagen img {
+        max-width: 100%;
+    }
+
 }
