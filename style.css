@@ -1,7 +1,8 @@
 body {
-    background-color: #595959;
-    padding: 0px;
-    font-family: Verdana;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f1a;
+    color: white;
 }
 
 .main-menu {
@@ -9,7 +10,6 @@ body {
     position: fixed;
     top: 0;
     left: -250px;
-    /* ocultado por ... */
     width: 250px;
     height: 100%;
     transition: 0.3s;
@@ -108,20 +108,8 @@ header {
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #0f0f1a;
-    color: white;
-}
 
-button {
-    padding: 12px 25px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-}
+
 
 button:hover {
     transform: scale(1.05);
@@ -186,7 +174,7 @@ button:hover {
     display: inline-block;
     padding: 10px 25px;
 
-    background: linear-gradient(45deg, #2C264A, #B0C9F7)
+    background: linear-gradient(45deg, #2C264A, #B0C9F7);
     color: white;
 
     font-weight: bold;
