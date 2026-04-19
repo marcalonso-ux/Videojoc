@@ -1,7 +1,16 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
-    background-color: #595959;
-    padding: 0px;
-    font-family: Verdana;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at top, #3a0ca3, #000);
+    color: white;
 }
 
 .main-menu {
@@ -9,7 +18,6 @@ body {
     position: fixed;
     top: 0;
     left: -250px;
-    /* ocultado por ... */
     width: 250px;
     height: 100%;
     transition: 0.3s;
@@ -48,14 +56,11 @@ body {
 
 ul {
     list-style: none;
-    /* Quita los puntos negros */
     padding: 0;
-    /* Quita el espacio que dejan los puntos al irse */
     margin: 0;
 }
 
 
-/* El overlay por defecto está escondido */
 
 .overlay {
     position: fixed;
@@ -65,11 +70,8 @@ ul {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
-    /* ESTO ES VITAL */
     z-index: 998;
-    /* Debe ser mayor que el resto de la web */
     pointer-events: auto;
-    /* Obliga a que acepte clics */
 }
 
 .overlay.activo {
@@ -95,25 +97,128 @@ ul {
     align-items: center;
 }
 
-img {
+.parteSuperiorDerecha img {
     width: 75px;
     height: 75px;
 }
+
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #595959;
     padding: 15px 20px;
 }
 
-.parteCentral {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+
+
+
+button:hover {
+    transform: scale(1.05);
 }
+
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+
+
+@keyframes zoomHero {
+    from { transform: scale(1.1); }
+    to { transform: scale(1.2); }
+}
+
+
+.hero-bg {
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    background: url("imatges/foto.png") center/cover no-repeat;
+
+    transform: scale(1.1);
+    filter: blur(2px) brightness(0.6);
+
+    animation: zoomHero 10s ease-in-out infinite alternate;
+}
+
+
+
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.2));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.temporada {
+    display: inline-block;
+    padding: 10px 25px;
+
+    background: linear-gradient(45deg, #2C264A, #B0C9F7);
+    color: white;
+
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    border-radius: 30px;
+
+    box-shadow:
+    0 0 15px rgba(145, 99, 4, 0.6),
+    0 0 30px rgba(161, 1, 42, 0.4);
+
+}
+
+
+
+.hero-content p {
+    margin-bottom: 20px;
+}
+
+.botones {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary {
+    background: orange;
+    color: black;
+}
+
+.btn-secondary {
+    background: #ccc;
+    color: black;
+}
+
+.info {
+    padding: 80px;
+    text-align: center;
+}
+
+
 
 .informacion h1 {
     font-size: 40px;
@@ -287,94 +392,6 @@ button:hover {
 /* 2n cla */
 
 
-/* 3n cla */
-
-.hero-juego {
-    height: 300px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("imatges/fondo.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-.hero-juego h1 {
-    font-size: 50px;
-    text-shadow: 0 0 20px red;
-}
-
-.descripcion {
-    padding: 40px;
-    text-align: center;
-    color: white;
-}
-
-.descripcion h2 {
-    margin-bottom: 20px;
-}
-
-.cards {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
-.card {
-    background: #1a1a1a;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 200px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.card img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.galeria {
-    padding: 40px;
-    text-align: center;
-}
-
-.imagenes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-
-.imagenes img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-
-/*
-@media (max-width: 768px) {
-
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .imagenes {
-        grid-template-columns: 1fr;
-    }
-}*/
-
-
-/* 3n cla */
 
 
 /* podio */
@@ -441,9 +458,6 @@ button:hover {
     animation: subir 0.8s ease;
 }
 
-.caja {
-    animation: subir 0.8s ease;
-}
 
 @keyframes subir {
     from {
