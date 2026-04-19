@@ -130,6 +130,10 @@ ul {
     align-items: center;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 .contacto-box {
     display: flex;
@@ -231,9 +235,29 @@ ul {
 
 
 @media (max-width: 900px) {
+    .contacto-container {
+        height: auto;
+        padding: 40px 20px;
+    }
+
     .contacto-box {
         flex-direction: column;
-        align-items: center;
+        gap: 30px;
+        padding: 30px 20px;
+        width: 100%;
+    }
+
+    .contacto-info {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .contacto-info h1 {
+        font-size: 32px;
+    }
+
+    .contacto-form {
+        width: 100%;
     }
 }
 
