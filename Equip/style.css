@@ -9,7 +9,6 @@
         position: fixed;
         top: 0;
         left: -250px;
-        /* ocultado por ... */
         width: 250px;
         height: 100%;
         transition: 0.3s;
@@ -48,12 +47,9 @@
     
     ul {
         list-style: none;
-        /* Quita los puntos negros */
         padding: 0;
-        /* Quita el espacio que dejan los puntos al irse */
         margin: 0;
     }
-    /* El overlay por defecto está escondido */
     
     .overlay {
         position: fixed;
@@ -63,11 +59,8 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         display: none;
-        /* ESTO ES VITAL */
         z-index: 998;
-        /* Debe ser mayor que el resto de la web */
         pointer-events: auto;
-        /* Obliga a que acepte clics */
     }
     
     .overlay.activo {
@@ -84,18 +77,6 @@
     
     .main-menu li a:hover {
         background-color: #d60000;
-        color: white;
-    }
-    
-    body {
-        background: white;
-        color: black;
-        transition: 0.4s;
-    }
-    /* modo noche */
-    
-    body.dark {
-        background: #121212;
         color: white;
     }
     
@@ -142,7 +123,7 @@
     }
     
     button {
-        background-color: transparent;
+        background-color: #d60000;
         border: none;
         padding: 12px 30px;
         border-radius: 25px;
@@ -199,38 +180,27 @@
     
     .encabezado p:nth-child(1) {
         color: #1a73e8;
-        /* Azul Google/Profesional */
         font-size: 14px;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 2px;
-        /* Espacio entre letras */
         margin-bottom: 8px;
-        /* Muy poca distancia con el título */
     }
     
     .encabezado p:nth-child(2) {
         color: #121826;
-        /* Negro casi total */
         font-size: 50px;
         font-weight: 800;
         letter-spacing: -1px;
-        /* Las letras están un pelín juntas */
         margin-bottom: 20px;
-        /* Distancia moderada con la descripción */
         line-height: 1.1;
-        /* Para que el bloque del título sea compacto */
     }
-    /* Descripción */
     
     .encabezado p:last-child {
         color: #4b5563;
-        /* Gris oscuro */
         font-size: 18px;
         line-height: 1.5;
-        /* Aquí sí hay aire entre las dos líneas de texto */
         max-width: 600px;
-        /* Para que rompa en dos líneas como en la foto */
     }
     
     .nosotros {
@@ -244,7 +214,6 @@
     .Alex,
     .Marc {
         border: 1px solid black;
-        border-radius: 15px;
         padding: 15px;
         display: flex;
         flex-direction: column;
@@ -308,7 +277,6 @@
         background-position: center;
         cursor: pointer;
     }
-    /* Nota que no hay espacio entre los puntos */
     
     .fab.fa-instagram {
         background-image: url("imagenes/instagram.png");
