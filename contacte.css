@@ -153,12 +153,12 @@ ul {
 }
 
 .contacto-info h1 {
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 20px;
 
     text-shadow:
-        0 0 10px #fff,
-        0 0 20px #a855f7;
+        0 0 10px #F50413,
+        0 0 20px #408185 ;
 }
 
 .contacto-info p {
@@ -212,7 +212,7 @@ ul {
     border: none;
     border-radius: 20px;
 
-    background: linear-gradient(45deg, #ff0066, #a855f7);
+    background: linear-gradient(158deg, #d60000, #6dc1e8);
     color: white;
 
     font-weight: bold;
