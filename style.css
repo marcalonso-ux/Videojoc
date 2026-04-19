@@ -216,6 +216,50 @@ img {
     color: black;
 }
 
+
+
+
+.menu-principal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 80px;
+}
+
+.card {
+    background: #111;
+    padding: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    border: 1px solid rgba(120, 0, 255, 0.2);
+
+    box-shadow:
+        0 0 15px rgba(0,255,100,0.2),
+        inset 0 0 30px rgba(120, 0, 255, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.03);
+
+    box-shadow:
+        0 0 25px rgba(120, 0, 255, 0.6),
+        0 0 60px rgba(120, 0, 255, 0.3);
+}
+
+.card h2 {
+    font-size: 30px;
+    color: #851111;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #ccc;
+    font-size: 16px;
+}
+
+
 .info {
     padding: 80px;
     text-align: center;
@@ -597,6 +641,22 @@ button:hover {
     font-size: 12px;
     opacity: 0.6;
 }
+
+
+
+@media (max-width: 900px) {
+    .menu-principal {
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+
+    .card {
+        padding: 30px;
+        text-align: center;
+    }
+}
+
+
 
 @media (max-width: 768px) {
     header {
