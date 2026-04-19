@@ -289,3 +289,10 @@
     .fab.fa-twitter {
         background-image: url("imagenes/x.png");
     }
+    
+    @media (max-width: 1000px) {
+        .nosotros {
+            display: flex;
+            flex-direction: column;
+        }
+    }
