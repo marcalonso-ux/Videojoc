@@ -10,7 +10,7 @@ body {
     font-family: Arial, sans-serif;
     background: radial-gradient(circle at top, #3a0ca3, #000);
     color: white;
-    padding-top: 60px;
+   
 
 }
 
@@ -173,7 +173,7 @@ ul {
     padding: 12px 30px;
     border-radius: 25px;
     border: none;
-    background: linear-gradient(45deg, #a855f7, #ff00cc);
+    background: linear-gradient(242deg, #499cc2, #0066d3);
     color: white;
     cursor: pointer;
     transition: 0.3s;
