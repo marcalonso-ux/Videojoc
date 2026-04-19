@@ -476,7 +476,7 @@ button:hover {
     text-shadow: 0 0 20px red;
 }
 
-¡.panel-comentario {
+panel-comentario {
     background: rgba(0,0,0,0.7);
     border-radius: 15px;
     padding: 30px;
