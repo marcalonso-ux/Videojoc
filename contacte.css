@@ -232,7 +232,51 @@ img {
         0 0 40px #a855f7;
 }
 
+.footer {
+    margin-top: 80px;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    color: #ccc;
+}
 
+.footer-contenido h3 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #a855f7;
+}
+
+.footer-contenido p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #d60000;
+    text-shadow: 0 0 10px #d60000;
+}
+
+.copy {
+    font-size: 12px;
+    opacity: 0.6;
+}
 
 @media (max-width: 900px) {
     .contacto-container {
@@ -259,5 +303,11 @@ img {
     .contacto-form {
         width: 100%;
     }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
 }
 
