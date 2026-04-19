@@ -127,7 +127,10 @@ button:hover {
 }
 
 
-
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 
 @keyframes zoomHero {
@@ -575,5 +578,53 @@ button:hover {
     }
     button {
         width: 100%;
+    }
+
+     .hero-content {
+        padding: 20px;
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .botones {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .leaderboard {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .podio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .podio-item {
+        width: 80%;
+    }
+
+    .fila {
+        grid-template-columns: 40px 1fr 80px;
+        padding: 10px;
+    }
+
+    .fila span:nth-child(n+3):not(:last-child) {
+        display: none;
+    }
+
+    .comentario-item {
+        width: 95%;
+    }
+
+    .panel-comentario {
+        width: 90%;
+        padding: 20px;
     }
 }
