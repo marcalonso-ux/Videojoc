@@ -1,5 +1,5 @@
     body {
-        background-color: #595959;
+        background: radial-gradient(circle at top, #3a0ca3, #000);
         padding: 0px;
         font-family: Verdana;
     }
@@ -95,7 +95,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #595959;
         padding: 15px 20px;
     }
     
