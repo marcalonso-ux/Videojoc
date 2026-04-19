@@ -198,7 +198,7 @@ button:hover {
     0 0 15px rgba(145, 99, 4, 0.6),
     0 0 30px rgba(161, 1, 42, 0.4);
 
-
+}
 
 
 
@@ -206,7 +206,6 @@ button:hover {
     margin-bottom: 20px;
 }
 
-/* BOTONES */
 .botones {
     display: flex;
     gap: 15px;
