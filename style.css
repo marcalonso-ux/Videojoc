@@ -48,14 +48,11 @@ body {
 
 ul {
     list-style: none;
-    /* Quita los puntos negros */
     padding: 0;
-    /* Quita el espacio que dejan los puntos al irse */
     margin: 0;
 }
 
 
-/* El overlay por defecto está escondido */
 
 .overlay {
     position: fixed;
@@ -65,11 +62,8 @@ ul {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
-    /* ESTO ES VITAL */
     z-index: 998;
-    /* Debe ser mayor que el resto de la web */
     pointer-events: auto;
-    /* Obliga a que acepte clics */
 }
 
 .overlay.activo {
@@ -108,7 +102,6 @@ header {
     padding: 15px 20px;
 }
 
-/*index prueba*/
 
 * {
     margin: 0;
@@ -167,7 +160,6 @@ button:hover {
 
 
 
-/* CAPA OSCURA */
 .hero-overlay {
     position: absolute;
     width: 100%;
@@ -175,7 +167,6 @@ button:hover {
     background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.2));
 }
 
-/* CONTENIDO */
 .hero-content {
     position: relative;
     z-index: 2;
@@ -187,24 +178,44 @@ button:hover {
     max-width: 600px;
 }
 
-/* TITULO */
 .hero-content h1 {
     font-size: 80px;
     font-weight: 900;
 }
 
-/* TEMPORADA */
 .temporada {
-    margin: 20px 0;
-    padding: 8px 20px;
-    background: #ccc;
-    color: black;
-    border: 3px solid red;
     display: inline-block;
-    transform: rotate(-2deg);
+    padding: 10px 25px;
+
+    background: linear-gradient(45deg, #ff0066, #a855f7);
+    color: white;
+
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 0 15px rgba(255, 0, 100, 0.6),
+        0 0 30px rgba(168, 85, 247, 0.4);
+
+    animation: glowTemporada 2s infinite alternate;
 }
 
-/* TEXTO */
+@keyframes glowTemporada {
+    from {
+        box-shadow:
+            0 0 10px rgba(255, 0, 100, 0.5),
+            0 0 20px rgba(168, 85, 247, 0.3);
+    }
+    to {
+        box-shadow:
+            0 0 20px rgba(255, 0, 100, 0.9),
+            0 0 40px rgba(168, 85, 247, 0.7);
+    }
+}
+
+
 .hero-content p {
     margin-bottom: 20px;
 }
@@ -225,14 +236,12 @@ button:hover {
     color: black;
 }
 
-/* SECCIÓN EXTRA */
 .info {
     padding: 80px;
     text-align: center;
 }
 
 
-/*index*/
 
 .informacion h1 {
     font-size: 40px;
