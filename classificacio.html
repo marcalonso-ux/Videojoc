@@ -53,22 +53,36 @@
 
         <h1>OVERALL LEADERBOARD</h1>
 
-        <!--
-        <div class="fila top">
-            <span class="pos">🥇</span>
-            <span class="team">TEAM LIONS</span>
-            <span>50</span>
-            <span>46</span>
-            <span>56</span>
-            <span>+30</span>
-        </div>
-    -->
+    
         <div id="fila">
 
         </div>
 
 
     </section>
+
+
+<section class="zona-comentarios">
+    <h1>Feedback Jugadores</h1>
+
+    <div class="panel-comentario">
+        <form class="form-comentario">
+            <label>Jugador</label>
+            <input type="text" id="usuario" placeholder="Tu nombre..." required>
+
+            <label>Opinión</label>
+            <textarea id="texto" placeholder="Escribe tu experiencia..." required></textarea>
+
+            <button onclick="crearComentario(event)" class="btn-comentar">Enviar</button>
+        </form>
+    </div>
+
+    <div class="lista-comentarios" id="listaComentarios">
+    </div>
+</section>
+    
+
+    
     <script src="script.js"></script>
     <script src="Menu/script.js"></script>
 
