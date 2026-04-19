@@ -494,7 +494,7 @@ button:hover {
 
 .form-comentario label {
     font-weight: bold;
-    color: #ff4d6d;
+    color: #d60000;
 }
 
 .form-comentario input,
@@ -512,7 +512,7 @@ button:hover {
 
 .btn-comentar {
     margin-top: 10px;
-    background: linear-gradient(45deg, #ff0055, #a855f7);
+    background: linear-gradient(45deg, #ff0500, #b15405);
     border: none;
     padding: 12px;
     border-radius: 20px;
