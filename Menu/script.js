@@ -45,3 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         e.stopPropagation();
     });
 });
+
+function modoNoche() {
+    document.body.classList.toggle("dark");
+}
