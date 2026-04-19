@@ -49,3 +49,30 @@ async function obtenerClasificacion() {
 
 document.addEventListener('DOMContentLoaded', obtenerClasificacion);
 obtenerClasificacion();
+
+
+
+
+function crearComentario(e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById("usuario").value;
+    const texto = document.getElementById("texto").value;
+
+    if (nombre === "" || texto === "") return;
+
+    const contenedor = document.getElementById("listaComentarios");
+
+    const nuevo = document.createElement("div");
+    nuevo.classList.add("comentario-item");
+
+    nuevo.innerHTML = `
+        <h3>${nombre}</h3>
+        <p>${texto}</p>
+    `;
+
+    contenedor.prepend(nuevo);
+
+    document.getElementById("usuario").value = "";
+    document.getElementById("texto").value = "";
+}
