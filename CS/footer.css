@@ -1,0 +1,46 @@
+.final {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 155px;
+    padding: 35px;
+    height: 150px;
+    width: 1232px;
+    border: 1px solid #b07cff;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.problema {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.problema>p {
+    font-family: 'VERDANA';
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.titFoot {
+    color: white;
+    font-family: Georgia;
+    font-weight: bold;
+}
+
+.fparte4 p:nth-child(2) {
+    color: #b8b8c5;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.CopyRight {
+    color: #b8b8c5;
+    font-family: sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}

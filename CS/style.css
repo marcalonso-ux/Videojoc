@@ -1,0 +1,348 @@
+body {
+    background-color: #0a0a14;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 16px 40px;
+    background: rgba(10, 10, 20, 0.6);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+header div:nth-of-type(2) {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+header:nth-of-type(1) {
+    gap: 325px;
+}
+
+.marca {
+    height: 45px;
+    width: 45px;
+}
+
+.nombreJuego {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    align-items: center;
+}
+
+.nombreJuego>p {
+    font-family: 'VERDANA';
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+li {
+    list-style: none;
+}
+
+.menuBarra {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+}
+
+.menuBarra li a {
+    position: relative;
+}
+
+.menuBarra li a:hover {
+    color: #c4b5fd;
+    text-shadow: 0 0 2px rgba(168, 85, 247, 0.2);
+}
+
+.menuBarra li a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient( to bottom, rgba(168, 85, 247, 0.9), /* arriba más intenso */
+    rgba(168, 85, 247, 0.1)/* abajo más suave */
+    );
+    border-radius: 2px;
+    box-shadow: 0 0 6px rgba(168, 85, 247, 0.25);
+}
+
+.menuBarra li a.active {
+    color: #c4b5fd;
+    text-shadow: 0 0 2px rgba(168, 85, 247, 0.2);
+}
+
+.menuBarra li a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient( to bottom, rgba(168, 85, 247, 0.9), rgba(168, 85, 247, 0.1));
+    border-radius: 2px;
+    box-shadow: 0 0 6px rgba(168, 85, 247, 0.25);
+}
+
+.menuBarra a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.fparte1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.fparte1>p {
+    color: #b8b8c5;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 0;
+    margin-left: 10px;
+}
+
+.calibrarImagen {
+    background-image: linear-gradient(to bottom, rgba(10, 10, 20, 0) 60%, rgba(10, 10, 20, 1) 100%), url("../imatges/fondo.png");
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #0a0a14;
+}
+
+.pInicio {
+    display: flex;
+    flex-direction: column;
+    margin-left: 95px;
+    max-width: 500px;
+}
+
+.fparte2 li a {
+    text-decoration: none;
+    color: #b8b8c5;
+    font-family: sans-serif;
+    font-size: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.pInicio>p:first-of-type {
+    font-family: Georgia;
+    color: #6A2CFF;
+    height: 35px;
+    width: 135px;
+    background-color: black;
+    border: 1px solid #6A2CFF;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pInicio>h2:first-of-type {
+    font-family: Verdana;
+    font-size: 100px;
+    color: white;
+    margin-top: -17px;
+}
+
+.pInicio>h5:first-of-type {
+    font-family: Georgia;
+    font-size: 22px;
+    color: #6A2CFF;
+    margin-top: -80px;
+}
+
+.pInicio p:nth-of-type(2) {
+    color: white;
+    font-family: sans-serif;
+    margin-top: -3px;
+    margin-bottom: 40px;
+}
+
+.piBotones {
+    font-family: sans-serif;
+    display: flex;
+    gap: 25px;
+}
+
+.btJugar {
+    height: 50px;
+    width: 225px;
+    background-color: #8B49FF;
+    border: 1px solid #b07cff;
+    border-radius: 15px;
+    color: white;
+}
+
+.btTrailer {
+    height: 50px;
+    width: 180px;
+    background-color: transparent;
+    border: 1px solid #b07cff;
+    border-radius: 15px;
+    color: white;
+}
+
+.pExplorador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    margin-left: 100px;
+    margin-top: 65px;
+}
+
+.peInfo,
+.peContacto,
+.peClas,
+.peEquipo {
+    height: 300px;
+    width: 250px;
+    background-color: transparent;
+    border: 1px solid #8B49FF;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.peInfo>p:first-of-type {
+    color: white;
+    font-family: georgia;
+    font-size: 25px;
+}
+
+.peInfo p:nth-child(2) {
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.btExplorador {
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    height: 50px;
+    width: 175px;
+    border: 1px solid #b07cff;
+    border-radius: 15px;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.peClas>p:first-of-type {
+    color: white;
+    font-family: georgia;
+    font-size: 25px;
+}
+
+.peClas p:nth-child(2) {
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.peEquipo>p:first-of-type {
+    color: white;
+    font-family: georgia;
+    font-size: 25px;
+}
+
+.peEquipo p:nth-child(2) {
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.peContacto>p:first-of-type {
+    color: white;
+    font-family: georgia;
+    font-size: 25px;
+}
+
+.peContacto p:nth-child(2) {
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.logInstagram,
+.logDiscord,
+.logX,
+.logLinkedin {
+    height: 35px;
+    width: 35px;
+    border: 1px solid #b07cff;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.logInstagram {
+    background-image: url(../imatges/instagram.png);
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.logDiscord {
+    background-image: url(../imatges/discord.webp);
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.logX {
+    background-image: url(../imatges/x.png);
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.logLinkedin {
+    background-image: url(../imatges/linkedin.webp);
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
