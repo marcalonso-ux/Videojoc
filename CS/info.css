@@ -1,0 +1,253 @@
+/* CS/info.css */
+
+.info-main {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.titulo-seccion {
+    font-family: Verdana, sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(139, 73, 255, 0.6);
+}
+
+/* Personajes */
+.personajes-seccion {
+    width: 90%;
+    max-width: 1200px;
+    margin-bottom: 80px;
+}
+
+.personajes-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.personaje-card {
+    background: linear-gradient(145deg, #12121a, #1a1a2e);
+    border: 1px solid #8B49FF;
+    border-radius: 20px;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.personaje-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(139, 73, 255, 0.4);
+    background: linear-gradient(145deg, #1a1a2e, #23233a);
+}
+
+.p-img-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #2a2a40;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #6A2CFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b8b8c5;
+    font-family: sans-serif;
+}
+
+.personaje-card h3 {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.personaje-card p {
+    color: #b8b8c5;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Controles */
+.controles-seccion {
+    width: 90%;
+    max-width: 1200px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controles-container {
+    background: rgba(10, 10, 20, 0.8);
+    border: 1px solid rgba(139, 73, 255, 0.5);
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.grupo-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.teclado-wasd {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(2, 60px);
+    gap: 10px;
+}
+
+.tecla {
+    background: #1a1a2e;
+    border: 2px solid #8B49FF;
+    border-radius: 10px;
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 0 #4a1f9e, 0 8px 10px rgba(0,0,0,0.5);
+    transition: transform 0.1s, box-shadow 0.1s;
+    user-select: none;
+}
+
+.tecla:active {
+    transform: translateY(5px);
+    box-shadow: 0 0px 0 #4a1f9e, 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.tecla.w { grid-column: 2; grid-row: 1; }
+.tecla.a { grid-column: 1; grid-row: 2; }
+.tecla.s { grid-column: 2; grid-row: 2; }
+.tecla.d { grid-column: 3; grid-row: 2; }
+.tecla.space { 
+    width: 250px; 
+    height: 60px;
+}
+
+.accion {
+    color: #b8b8c5;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Modificar "Info Juego" anterior (Temporadas/Bando) */
+.info-juego {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 90%;
+    max-width: 1200px;
+    margin-bottom: 80px;
+}
+
+.bloque {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(139, 73, 255, 0.2);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.bloque:hover {
+    border-color: rgba(139, 73, 255, 0.5);
+    box-shadow: 0 10px 40px rgba(139, 73, 255, 0.1);
+}
+
+.bloque.reverse {
+    flex-direction: row-reverse;
+}
+
+.texto {
+    flex: 1;
+}
+
+.texto h2 {
+    font-family: Verdana, sans-serif;
+    font-size: 32px;
+    color: white;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.texto p {
+    color: #b8b8c5;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    border: 2px solid #6A2CFF;
+    box-shadow: 0 0 20px rgba(106, 44, 255, 0.3);
+}
+
+.btn-info {
+    padding: 12px 25px;
+    border: 1px solid #b07cff;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #8B49FF;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-info:hover {
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 0 10px 25px rgba(157, 80, 255, 0.4);
+    background-color: #ae66ff;
+}
+
+@media (max-width: 768px) {
+    .bloque, .bloque.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .controles-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
