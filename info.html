@@ -4,182 +4,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collapse - Info</title>
-    <link rel="stylesheet" href="info.css">
+    <title>Collapse - Información</title>
+    <link rel="stylesheet" href="CS/style.css">
+    <link rel="stylesheet" href="CS/footer.css">
+    <link rel="stylesheet" href="CS/info.css">
 </head>
 
 <body>
-
-    <nav class="main-menu">
-        <ul>
-            <li>
-                <a href="index.html">Página principal</a>
-            </li>
-            <li>
-                <a href="info.html">Información</a>
-            </li>
-            <li>
-                <a href="classificacio.html">Clasificación </a>
-            </li>
-            <li>
-                <a href="equip.html">Equipo</a>
-            </li>
-             <li>
-                <a href="contacte.html">Contacto </a>
-            </li>
-            
-        </ul>
-    </nav>
-
-    <div class="overlay"></div>
-
-    <header class="ranking-header">
-        <div class="tresBotones">
-            <span></span>
-            <span></span>
-            <span></span>
+    <header>
+        <div class="nombreJuego">
+            <img src="imatges/Collapse.png" alt="Collapse" class="marca">
+            <p>COLLAPSE</p>
         </div>
 
+        <section class="menuBarra">
+            <li>
+                <a href="index.html">PRINCIPAL</a>
+            </li>
+            <li>
+                <a href="classificacio.html">CLASSIFICACIÓ</a>
+            </li>
+            <li>
+                <a href="equip.html">EQUIP</a>
+            </li>
+            <li>
+                <a href="info.html" class="active">INFORMACIÓ</a>
+            </li>
+            <li>
+                <a href="contacte.html">CONTACTE</a>
+            </li>
+        </section>
+
         <div class="parteSuperiorDerecha">
-            <img src="imatges/logo.png" alt="Logo del juego">
-            
+            <img class="logo" src="imatges/logo.png" alt="Logo del juego">
         </div>
     </header>
 
+    <main class="info-main">
+        
+        <!-- SECCIÓN PERSONAJES -->
+        <section class="personajes-seccion">
+            <h2 class="titulo-seccion">Personajes</h2>
+            <div class="personajes-grid">
+                <div class="personaje-card">
+                    <div class="p-img-placeholder">IMG</div>
+                    <h3>Asesino</h3>
+                    <p>Rápido y letal. Especialista en daño cuerpo a cuerpo y emboscadas.</p>
+                </div>
+                <div class="personaje-card">
+                    <div class="p-img-placeholder">IMG</div>
+                    <h3>Defensor</h3>
+                    <p>Imparable. Alta resistencia para proteger al equipo y controlar áreas.</p>
+                </div>
+                <div class="personaje-card">
+                    <div class="p-img-placeholder">IMG</div>
+                    <h3>Tirador</h3>
+                    <p>Precisión mortal. Ataca desde largas distancias con daño masivo.</p>
+                </div>
+                <div class="personaje-card">
+                    <div class="p-img-placeholder">IMG</div>
+                    <h3>Soporte</h3>
+                    <p>El pilar del equipo. Proporciona curación y mejoras a los aliados.</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- SECCIÓN CONTROLES -->
+        <section class="controles-seccion">
+            <h2 class="titulo-seccion">Controles</h2>
+            <div class="controles-container">
+                <div class="grupo-control">
+                    <div class="teclado-wasd">
+                        <div class="tecla w">W</div>
+                        <div class="tecla a">A</div>
+                        <div class="tecla s">S</div>
+                        <div class="tecla d">D</div>
+                    </div>
+                    <span class="accion">Movimiento</span>
+                </div>
+                
+                <div class="grupo-control">
+                    <div class="tecla space">ESPACIO</div>
+                    <span class="accion">Saltar / Esquivar</span>
+                </div>
 
-   
+                <div class="grupo-control">
+                    <div class="teclado-wasd" style="grid-template-columns: repeat(2, 60px); grid-template-rows: 60px; display: flex; gap:10px;">
+                        <div class="tecla" style="width: 100px;">Izq</div>
+                        <div class="tecla" style="width: 100px;">Der</div>
+                    </div>
+                    <span class="accion">Atacar / Hab. Secundaria</span>
+                </div>
+            </div>
+        </section>
 
-
-<section class="hero-juego">
-    <div class="hero-box">
-        <h1>Collapse</h1>
-        <p>Velocidad. Caos. Dominio total.</p>
-        <button>Jugar ahora</button>
-    </div>
-</section>
-
-
-
-    <div class="separador">
-        <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
-        <path d="M0,80 C300,150 1100,0 1440,80 L1440,150 L0,150 Z"></path>
-    </svg>
-    </div>
-
-
-    <section class="descripcion animado">
-        <h2>¿Qué es Collapse?</h2>
-        <p>
-            Collapse es un juego multijugador donde el caos y la habilidad se combinan. Compite en mapas dinámicos, domina físicas impredecibles y conviértete en el mejor.
-        </p>
-    </section>
-
-
-    <section class="features">
-
-        <div class="feature animado">
-            <h3> Partidas rápidas </h3>
-            <p>Entra y juega en segundos con partidas intensas y frenéticas.</p>
-        </div>
-
-        <div class="feature animado">
-            <h3> Multijugador </h3>
-            <p>Compite contra jugadores reales y demuestra tu nivel.</p>
-        </div>
-
-        <div class="feature animado">
-            <h3> Estrategia </h3>
-            <p>No todo es velocidad, piensa y domina cada mapa.</p>
-        </div>
-
-    </section>
-
-
-
-    <div class="separador">
-        <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
-        <path d="M0,80 C300,150 1100,0 1440,80 L1440,150 L0,150 Z"></path>
-    </svg>
-    </div>
-
-
-
-
-
-    <section class="info-juego">
-
-        <div class="bloque">
-            <div class="texto">
-                <h2>ELIGE TU BANDO Y COMPITE</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button>Más información</button>
+        <!-- INFO DEL JUEGO (Heredado y adaptado) -->
+        <section class="info-juego">
+            <div class="bloque">
+                <div class="texto">
+                    <h2>ELIGE TU BANDO Y COMPITE</h2>
+                    <p>Encuentra tu lugar en el caos. Únete a una de las facciones y demuestra por qué mereces estar en la cima de la tabla. Tus habilidades definirán el destino de la partida.</p>
+                    <button class="btn-info">Más información</button>
+                </div>
+                <div class="imagen">
+                    <img src="imatges/game1.jpg" alt="Imagen Juego 1" onerror="this.src='imatges/Collapse.png'">
+                </div>
             </div>
 
-            <div class="imagen">
-                <img src="imatges/game1.jpg">
+            <div class="bloque reverse">
+                <div class="texto">
+                    <h2>SISTEMA DE TEMPORADAS</h2>
+                    <p>Escala en los rangos y obtén recompensas exclusivas en cada temporada. Solo los mejores jugadores mantendrán su puesto en la clasificación de élite mundial.</p>
+                    <button class="btn-info">Ver Rangos</button>
+                </div>
+                <div class="imagen">
+                    <img src="imatges/game2.jpg" alt="Imagen Juego 2" onerror="this.src='imatges/Collapse.png'">
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="bloque reverse">
-            <div class="texto">
-                <h2>TEMPORADA 10000</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button>Más información</button>
-            </div>
+    </main>
 
-            <div class="imagen">
-                <img src="imatges/game2.jpg">
-            </div>
-        </div>
-
-
-        <div class="bloque">
-            <div class="texto">
-                <h2>TEMPORADA 22</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
-                </p>
-                <button>Más información</button>
+    <footer>
+        <section class="final ">
+            <div class="fparte1 ">
+                <div class="problema ">
+                    <img src="imatges/Collapse.png " alt="Collapse " class="marca ">
+                    <p>COLLAPSE</p>
+                </div>
+                <p>Plataforma competitiva on el millors <br> jugadors s'enfrontessin per descobrir <br> qui es el millor.</p>
             </div>
 
-            <div class="imagen">
-                <img src="imatges/game3.jpg">
+            <div class="fparte2 ">
+                <p class="titFoot ">ENLLAÇOS</p>
+                <li>
+                    <a href="index.html ">PRINCIPAL</a>
+                </li>
+                <li>
+                    <a href="classificacio.html ">CLASSIFICACIÓ</a>
+                </li>
+                <li>
+                    <a href="equip.html ">EQUIP</a>
+                </li>
+                <li>
+                    <a href="info.html ">INFORMACIÓ</a>
+                </li>
+                <li>
+                    <a href="contacte.html ">CONTACTE</a>
+                </li>
             </div>
-        </div>
 
+            <div class="fparte3 ">
+                <p class="titFoot ">SEGUEIX-NOS</p>
+                <div class="logos ">
+                    <button class="logInstagram " id="btnInsta "></button>
+                    <button class="logDiscord " id="btnDiscord "></button>
+                    <button class="logX " id="btnX "></button>
+                    <button class="logLinkedin " id="btnLinkedin "></button>
+                </div>
 
-    </section>
+            </div>
 
+            <div class="fparte4 ">
+                <p class="titFoot ">SOPORT</p>
+                <p>support@gmail.com
+                    <div class="flexFoot ">
+                        <li>
+                            <a href="index.html ">Preguntes  freqüents</a>
+                        </li>
+                        <li>
+                            <a href="classificacio.html ">Polítiques de  privacitat</a>
+                        </li>
+                        <li>
+                            <a href="equip.html ">Termes d'ús</a>
+                        </li>
+                    </div>
+            </div>
+        </section>
+        <p class="CopyRight ">© 2026 Collapse. Tots els drets reservats</p>
 
-
-
-
-    <div class="separador">
-        <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
-        <path d="M0,80 C300,150 1100,0 1440,80 L1440,150 L0,150 Z"></path>
-    </svg>
-    </div>
-
-
-<footer class="footer">
-    <div class="footer-contenido">
-        <h3>Collapse</h3>
-        <p>Canal oficial del videojuego</p>
-
-        <div class="footer-links">
-            <a href="index.html">Inicio</a>
-            <a href="info.html">Info</a>
-            <a href="contacte.html">Contacto</a>
-            <a href="classificacio.html">Ranking</a>
-        </div>
-
-        <p class="copy">© 2026 Collapse. Todos los derechos reservados.</p>
-    </div>
-</footer>
-
-    <script src="Menu/script.js"></script>
-
+    </footer>
+    <script src="CS/script.js"></script>
 </body>
 
 </html>
