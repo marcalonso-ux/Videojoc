@@ -264,3 +264,108 @@
     font-size: 15px;
     line-height: 1.5;
 }
+
+@media (max-width: 768px) {
+    .fila {
+        grid-template-columns: 40px 1fr 60px;
+    }
+
+    .fila span:nth-child(3),
+    .fila span:nth-child(4),
+    .fila span:nth-child(5) {
+        display: none;
+    }
+
+    .podio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .oro,
+    .plata,
+    .bronce {
+        order: 0;
+        height: auto;
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .leaderboard h1 {
+        font-size: 28px;
+    }
+    .podio-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .podio-item {
+        width: 100%;
+        max-width: 250px;
+    }
+    .oro, .plata, .bronce {
+        order: 0;
+    }
+    .encabezado {
+        display: none;
+    }
+    .fila {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 15px;
+    }
+    .fila span {
+        width: 100%;
+    }
+}
+
+body.light-mode .leaderboard h1,
+body.light-mode .zona-comentarios h1 {
+    color: #222;
+    text-shadow: none;
+}
+
+body.light-mode .fila {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-left: 5px solid #8B49FF;
+}
+
+body.light-mode .fila span {
+    color: #333;
+}
+
+body.light-mode .fila span:first-child {
+    color: #6A2CFF;
+}
+
+body.light-mode .fila span:last-child {
+    color: #8B49FF;
+}
+
+body.light-mode .panel-comentario {
+    background: white;
+    border: 1px solid #e0e0e0;
+}
+
+body.light-mode .form-comentario input,
+body.light-mode .form-comentario textarea {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+body.light-mode .comentario-item {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-left: 5px solid #8B49FF;
+}
+
+body.light-mode .comentario-item h3 {
+    color: #222;
+}
+
+body.light-mode .comentario-item p {
+    color: #555;
+}
