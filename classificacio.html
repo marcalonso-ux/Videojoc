@@ -40,5 +40,28 @@
         </div>
     </header>
 
+    <main class="classificacio-main">
+        <section class="leaderboard">
+            <h1>Clasificación Global</h1>
+            <div id="fila"></div>
+        </section>
+
+        <section class="zona-comentarios">
+            <h1>Comunidad</h1>
+            <div class="panel-comentario">
+                <form class="form-comentario">
+                    <label>Jugador</label>
+                    <input type="text" id="usuario" placeholder="Tu nombre..." required>
+
+                    <label>Opinión</label>
+                    <textarea id="texto" placeholder="Escribe tu experiencia o estrategia..." required></textarea>
+
+                    <button onclick="crearComentario(event)" class="btn-comentar">Publicar Comentario</button>
+                </form>
+            </div>
+            <div class="lista-comentarios" id="listaComentarios"></div>
+        </section>
+    </main>
+
 </body>
 </html>
