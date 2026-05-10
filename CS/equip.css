@@ -1,0 +1,167 @@
+/* CS/equip.css */
+.equip-main {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.equip-hero {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.equip-hero p:first-of-type {
+    font-family: Georgia, serif;
+    color: #6A2CFF;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.equip-hero p:nth-of-type(2) {
+    font-family: Verdana, sans-serif;
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(139, 73, 255, 0.6);
+    margin-bottom: 20px;
+}
+
+.equip-hero p:nth-of-type(3) {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #b8b8c5;
+    max-width: 600px;
+}
+
+.nosotros {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    margin-bottom: 100px;
+}
+
+.miembro-card {
+    background: linear-gradient(145deg, #12121a, #1a1a2e);
+    border: 1px solid #8B49FF;
+    border-radius: 20px;
+    width: 300px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.miembro-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(139, 73, 255, 0.4);
+    background: linear-gradient(145deg, #1a1a2e, #23233a);
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    background-color: #2a2a40;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #6A2CFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b8b8c5;
+    font-size: 40px;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+}
+
+.nombre {
+    font-family: Verdana, sans-serif;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.rol {
+    font-family: Georgia, serif;
+    color: #00ffcc;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.descripcion {
+    font-family: sans-serif;
+    color: #b8b8c5;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.redes {
+    display: flex;
+    gap: 15px;
+}
+
+.redes button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #b07cff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.redes button:hover {
+    background-color: #8B49FF;
+    box-shadow: 0 0 15px #8B49FF;
+    transform: scale(1.1);
+}
+
+body.light-mode .equip-hero p:nth-of-type(2) {
+    color: #222;
+    text-shadow: none;
+}
+
+body.light-mode .equip-hero p:nth-of-type(3) {
+    color: #555;
+}
+
+body.light-mode .miembro-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+body.light-mode .avatar {
+    background-color: #f5f5f7;
+    border-color: #8B49FF;
+    color: #8B49FF;
+    box-shadow: none;
+}
+
+body.light-mode .nombre {
+    color: #222;
+}
+
+body.light-mode .rol {
+    color: #6A2CFF;
+}
+
+body.light-mode .descripcion {
+    color: #555;
+}
+
+body.light-mode .redes button {
+    border-color: #ccc;
+    color: #8B49FF;
+}
