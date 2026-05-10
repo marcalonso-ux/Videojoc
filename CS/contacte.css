@@ -20,5 +20,29 @@ header {
     padding: 15px 20px;
 }
 
+   .main-menu {
+        background: #212121;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        transition: 0.3s;
+        z-index: 999;
+    }
+    
+    
+.main-menu {
+    background: #212121;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    transition: 0.3s;
+    z-index: 999;
+}
 
-
+.main-menu.activo {
+    left: 0;
+}
