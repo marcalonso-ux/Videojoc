@@ -143,3 +143,11 @@
     color: white;
 }
 
+.zona-comentarios {
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
