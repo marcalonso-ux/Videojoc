@@ -46,3 +46,30 @@ header {
 .main-menu.activo {
     left: 0;
 }
+
+.tresBotones {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.tresBotones:hover {
+    transform: scale(1.15) rotate(5deg);
+}
+
+.tresBotones:hover span {
+    background: #d60000;
+}
+
+.tresBotones span {
+    display: block;
+    height: 4px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
