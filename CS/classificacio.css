@@ -23,6 +23,7 @@
     margin-bottom: 40px;
 }
 
+/* Podio API */
 .podio-container {
     display: flex;
     justify-content: center;
@@ -324,6 +325,17 @@ body.light-mode .leaderboard h1,
 body.light-mode .zona-comentarios h1 {
     color: #222;
     text-shadow: none;
+}
+
+body.light-mode .podio-item {
+    background: white;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .podio-item h2,
+body.light-mode .podio-item p {
+    color: #333 !important;
 }
 
 body.light-mode .fila {
