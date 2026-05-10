@@ -120,3 +120,30 @@ ul {
     height: 75px;
 }
 
+.contacto-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contacto-box {
+    display: flex;
+    gap: 60px;
+
+    background: rgba(0,0,0,0.7);
+    padding: 50px;
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 0 40px rgba(168,85,247,0.6),
+        0 0 80px rgba(255,0,100,0.3);
+}
+
