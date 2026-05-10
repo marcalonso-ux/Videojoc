@@ -114,3 +114,32 @@
     border-right: 1px solid rgba(139, 73, 255, 0.2);
 }
 
+.fila:hover {
+    transform: scale(1.02);
+    background: linear-gradient(90deg, #8B49FF, #4a1f9e);
+    border-left: 5px solid white;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(139, 73, 255, 0.4);
+}
+
+.fila span {
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.fila span:first-child {
+    font-size: 18px;
+    color: #00ffcc;
+    font-weight: bold;
+}
+
+.fila span:last-child {
+    font-weight: bold;
+    color: #ff00cc;
+}
+
+.fila:hover span:last-child {
+    color: white;
+}
+
