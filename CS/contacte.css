@@ -147,3 +147,23 @@ img {
         0 0 80px rgba(255,0,100,0.3);
 }
 
+
+
+.contacto-info {
+    max-width: 350px;
+}
+
+.contacto-info h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+
+    text-shadow:
+        0 0 10px #F50413,
+        0 0 20px #408185 ;
+}
+
+.contacto-info p {
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
