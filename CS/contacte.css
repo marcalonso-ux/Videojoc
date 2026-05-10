@@ -274,3 +274,36 @@ img {
     font-size: 12px;
     opacity: 0.6;
 }
+
+@media (max-width: 900px) {
+    .contacto-container {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .contacto-box {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+        width: 100%;
+    }
+
+    .contacto-info {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .contacto-info h1 {
+        font-size: 32px;
+    }
+
+    .contacto-form {
+        width: 100%;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+}
