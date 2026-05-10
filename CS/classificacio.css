@@ -6,3 +6,8 @@
     width: 100%;
 }
 
+.leaderboard {
+    width: 90%;
+    max-width: 900px;
+    margin-bottom: 60px;
+}
