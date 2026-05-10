@@ -67,3 +67,35 @@
     order: 3;
 }
 
+.podio-item .avatar {
+    font-family: Verdana, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+.podio-item .nombre {
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.podio-item .puntos {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
