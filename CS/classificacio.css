@@ -44,3 +44,26 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
+.podio-item:hover {
+    transform: translateY(-10px);
+}
+
+.oro {
+    background: linear-gradient(180deg, #ffd700, #ff8c00);
+    height: 220px;
+    order: 2;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+}
+
+.plata {
+    background: linear-gradient(180deg, #e0e0e0, #9e9e9e);
+    height: 180px;
+    order: 1;
+}
+
+.bronce {
+    background: linear-gradient(180deg, #cd7f32, #8b4513);
+    height: 150px;
+    order: 3;
+}
+
