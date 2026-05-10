@@ -4,99 +4,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipo</title>
-    <link rel="stylesheet" href="Equip/style.css">
+    <title>Collapse - Equipo</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CS/style.css">
+    <link rel="stylesheet" href="CS/footer.css">
+    <link rel="stylesheet" href="CS/equip.css">
 </head>
 
 <body>
-
     <nav class="main-menu">
         <ul>
-            <li>
-                <a href="index.html">Página principal</a>
-            </li>
-            <li>
-                <a href="info.html">Información</a>
-            </li>
-            <li>
-                <a href="classificacio.html">Clasificación </a>
-            </li>
-            <li>
-                <a href="equip.html">Equipo</a>
-            </li>
-            <li>
-                <a href="contacte.html">Contacto </a>
-            </li>
-
+            <li><a href="index.html">PRINCIPAL</a></li>
+            <li><a href="classificacio.html">CLASSIFICACIÓ</a></li>
+            <li><a href="equip.html" class="active">EQUIP</a></li>
+            <li><a href="info.html">INFORMACIÓ</a></li>
+            <li><a href="contacte.html">CONTACTE</a></li>
         </ul>
     </nav>
-
     <div class="overlay"></div>
-
-    <header class="ranking-header">
-        <div class="tresBotones">
-            <span></span>
-            <span></span>
-            <span></span>
+    <header>
+        <div class="nombreJuego">
+            <img src="imatges/Collapse.png" alt="Collapse" class="marca">
+            <p>COLLAPSE</p>
+        </div>
+        <section class="menuBarra">
+            <li><a href="index.html">PRINCIPAL</a></li>
+            <li><a href="classificacio.html">CLASSIFICACIÓ</a></li>
+            <li><a href="equip.html" class="active">EQUIP</a></li>
+            <li><a href="info.html">INFORMACIÓ</a></li>
+            <li><a href="contacte.html">CONTACTE</a></li>
+        </section>
+        <div class="parteSuperiorDerecha">
+            <img class="theme-btn mask-toggle" id="themeToggle" src="imatges/Collapse.png" alt="Toggle Theme">
+            <img class="logo" src="imatges/logo.png" alt="Logo del juego">
+            <div class="tresBotones">
+                <span></span><span></span><span></span>
+            </div>
         </div>
     </header>
 
-    <div class="caja">
-        <section class="todaInformacion">
-
-            <section class="encabezado">
-                <p>Conócenos</p>
-                <p>Nuestro Equipo</p>
-                <p>Somos una pequeña empresa que ha decidido crear una página web para un videojuego</p>
-            </section>
-
-            <section class="nosotros">
-                <div class="Mohamed">
-                    <p class="nombre">Mohamed Amine</p>
-                    <p class="rol">Director</p>
-                    <p class="descripcion">
-                        Dirige, organiza y toma decisiones dentro del grupo.
-                    </p>
-                    <div class="redes">
-                        <button class=" fab fa-twitter" onclick="irX()"></button>
-                        <button class=" fab fa-linkedin" onclick="irLinkedin()"></button>
-                        <button class=" fab fa-instagram" onclick="irInstagram()"></button>
-                    </div>
-                </div>
-
-                <div class="Alex">
-                    <p class="nombre">Alex Morro</p>
-                    <p class="rol">Colaborador</p>
-                    <p class="descripcion">
-                        Participa activamente y cumple las tareas asignadas por el director.
-                    </p>
-                    <div class="redes">
-                        <button class=" fab fa-twitter" onclick="irX()"></button>
-                        <button class=" fab fa-linkedin" onclick="irLinkedin()"></button>
-                        <button class=" fab fa-instagram" onclick="irInstagram()"></button>
-                    </div>
-                </div>
-
-
-                <div class="Marc">
-                    <p class="nombre">Marc Alonso</p>
-                    <p class="rol">Supervisor</p>
-                    <p class="descripcion">
-                        Controla que todo funcione bien y resuelve problemas.
-                    </p>
-                    <div class="redes">
-                        <button class=" fab fa-twitter" onclick="irX()"></button>
-                        <button class=" fab fa-linkedin" onclick="irLinkedin()"></button>
-                        <button class=" fab fa-instagram" onclick="irInstagram()"></button>
-                    </div>
-                </div>
-            </section>
+    <main class="equip-main">
+        <section class="equip-hero">
+            <p>Conócenos</p>
+            <p>Nuestro Equipo</p>
+            <p>Somos una empresa apasionada que ha decidido crear la mejor experiencia web para un videojuego
+                competitivo.</p>
         </section>
-    </div>
 
-    <script src="Equip/scripts.js"></script>
-    <script src="Menu/script.js"></script>
+        <section class="nosotros">
+            <div class="miembro-card">
+                <div class="avatar"><i class="fa-solid fa-user-tie"></i></div>
+                <p class="nombre">Mohamed Amine</p>
+                <p class="rol">Director</p>
+                <p class="descripcion">Dirige, organiza y toma las decisiones clave dentro del grupo para asegurar el
+                    éxito del proyecto.</p>
+                <div class="redes">
+                    <button class="fab fa-twitter"></button>
+                    <button class="fab fa-linkedin"></button>
+                    <button class="fab fa-instagram"></button>
+                </div>
+            </div>
 
+            <div class="miembro-card">
+                <div class="avatar"><i class="fa-solid fa-laptop-code"></i></div>
+                <p class="nombre">Alex Morro</p>
+                <p class="rol">Colaborador</p>
+                <p class="descripcion">Participa activamente en el desarrollo y cumple las tareas asignadas para hacer
+                    realidad el juego.</p>
+                <div class="redes">
+                    <button class="fab fa-twitter"></button>
+                    <button class="fab fa-linkedin"></button>
+                    <button class="fab fa-instagram"></button>
+                </div>
+            </div>
+
+            <div class="miembro-card">
+                <div class="avatar"><i class="fa-solid fa-eye"></i></div>
+                <p class="nombre">Marc Alonso</p>
+                <p class="rol">Supervisor</p>
+                <p class="descripcion">Controla que todos los sistemas funcionen perfectamente y resuelve problemas
+                    técnicos al instante.</p>
+                <div class="redes">
+                    <button class="fab fa-twitter"></button>
+                    <button class="fab fa-linkedin"></button>
+                    <button class="fab fa-instagram"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="final ">
+            <div class="fparte1 ">
+                <div class="problema ">
+                    <img src="imatges/Collapse.png " alt="Collapse " class="marca ">
+                    <p>COLLAPSE</p>
+                </div>
+                <p>Plataforma competitiva on el millors <br> jugadors s'enfrontessin per descobrir <br> qui es el
+                    millor.</p>
+            </div>
+            <div class="fparte2 ">
+                <p class="titFoot ">ENLLAÇOS</p>
+                <li><a href="index.html ">PRINCIPAL</a></li>
+                <li><a href="classificacio.html ">CLASSIFICACIÓ</a></li>
+                <li><a href="equip.html ">EQUIP</a></li>
+                <li><a href="info.html ">INFORMACIÓ</a></li>
+                <li><a href="contacte.html ">CONTACTE</a></li>
+            </div>
+            <div class="fparte3 ">
+                <p class="titFoot ">SEGUEIX-NOS</p>
+                <div class="logos ">
+                    <button class="logInstagram " id="btnInsta "></button>
+                    <button class="logDiscord " id="btnDiscord "></button>
+                    <button class="logX " id="btnX "></button>
+                    <button class="logLinkedin " id="btnLinkedin "></button>
+                </div>
+            </div>
+            <div class="fparte4 ">
+                <p class="titFoot ">SOPORT</p>
+                <p>support@gmail.com</p>
+                <div class="flexFoot ">
+                    <li><a href="index.html ">Preguntes freqüents</a></li>
+                    <li><a href="classificacio.html ">Polítiques de privacitat</a></li>
+                    <li><a href="equip.html ">Termes d'ús</a></li>
+                </div>
+            </div>
+        </section>
+        <p class="CopyRight ">© 2026 Collapse. Tots els drets reservats</p>
+    </footer>
+    <script src="CS/script.js"></script>
 </body>
 
 </html>

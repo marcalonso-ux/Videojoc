@@ -11,6 +11,16 @@
 </head>
 
 <body>
+    <nav class="main-menu">
+        <ul>
+            <li><a href="index.html" class="active">PRINCIPAL</a></li>
+            <li><a href="classificacio.html">CLASSIFICACIÓ</a></li>
+            <li><a href="equip.html">EQUIP</a></li>
+            <li><a href="info.html">INFORMACIÓ</a></li>
+            <li><a href="contacte.html">CONTACTE</a></li>
+        </ul>
+    </nav>
+    <div class="overlay"></div>
     <header>
 
         <div class="nombreJuego">
@@ -20,7 +30,7 @@
 
         <section class="menuBarra">
             <li>
-                <a href="index.html">PRINCIPAL</a>
+                <a href="index.html" class="active">PRINCIPAL</a>
             </li>
             <li>
                 <a href="classificacio.html">CLASSIFICACIÓ</a>
@@ -37,8 +47,11 @@
         </section>
 
         <div class="parteSuperiorDerecha">
+            <img class="theme-btn mask-toggle" id="themeToggle" src="imatges/Collapse.png" alt="Toggle Theme">
             <img class="logo" src="imatges/logo.png" alt="Logo del juego">
-
+            <div class="tresBotones">
+                <span></span><span></span><span></span>
+            </div>
         </div>
     </header>
 
@@ -142,7 +155,7 @@
         <p class="CopyRight ">© 2026 Collapse. Tots els drets reservats</p>
 
     </footer>
-    <src src="../Videojoc/CS/script.js"></src>
+    <script src="CS/script.js"></script>
 </body>
 
 </html>
