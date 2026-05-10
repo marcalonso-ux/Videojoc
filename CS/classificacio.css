@@ -11,3 +11,14 @@
     max-width: 900px;
     margin-bottom: 60px;
 }
+
+.leaderboard h1 {
+    font-family: Verdana, sans-serif;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(139, 73, 255, 0.6);
+    margin-bottom: 40px;
+}
