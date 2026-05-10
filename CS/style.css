@@ -1,4 +1,4 @@
-    body {
+ç    body {
         background-color: #0a0a14;
         overflow-x: hidden;
     }
@@ -155,22 +155,23 @@
     
     .pInicio>h2:first-of-type {
         font-family: Verdana;
-        font-size: 100px;
+        font-size: 80px;
         color: white;
-        margin-top: -17px;
+        margin-top: 10px;
+        margin-bottom: 50px;
     }
     
     .pInicio>h5:first-of-type {
         font-family: Georgia;
         font-size: 22px;
         color: #6A2CFF;
-        margin-top: -80px;
+        margin-bottom: 5px;
     }
     
     .pInicio p:nth-of-type(2) {
         color: white;
         font-family: sans-serif;
-        margin-top: -3px;
+        margin-top: 10px;
         margin-bottom: 40px;
     }
     
@@ -379,7 +380,6 @@
         background-repeat: no-repeat;
     }
 
-    /* Responsive Menu */
     .tresBotones {
         display: none;
         flex-direction: column;
@@ -533,7 +533,6 @@
         }
     }
 
-    /* LIGHT MODE - Global */
     body.light-mode {
         background-color: #f5f5f7;
         color: #333;
@@ -557,7 +556,6 @@
         color: #8B49FF;
     }
 
-    /* Global fixes requested by user */
     .parteSuperiorDerecha .logo {
         display: none;
     }
@@ -572,7 +570,18 @@
     }
 
     body.light-mode .pInicio p:nth-of-type(2) {
-        color: #555;
+        color: #333 !important;
+        text-shadow: none;
+    }
+
+    body.light-mode .btTrailer {
+        color: #8B49FF;
+        border-color: #8B49FF;
+    }
+
+    body.light-mode .btTrailer:hover {
+        background-color: rgba(139, 73, 255, 0.1);
+        text-shadow: none;
     }
 
     body.light-mode .peInfo,
@@ -640,7 +649,6 @@
         background-color: #333;
     }
 
-    /* Theme Button */
     .parteSuperiorDerecha {
         display: flex;
         align-items: center;
