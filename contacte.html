@@ -40,5 +40,34 @@
         </div>
     </header>
 
+    <main class="contacte-main">
+        <div class="contacto-container">
+            <div class="contacto-info">
+                <h1>Contacto</h1>
+                <p>¿Necesitas ayuda, has encontrado un error o tienes alguna sugerencia para mejorar Collapse?</p>
+                <p>Rellena el formulario y nuestro equipo de soporte se pondrá en contacto contigo lo antes posible para resolver cualquier incidencia.</p>
+            </div>
+            
+            <div class="contacto-form">
+                <!-- Se usa Formspree como API para recibir los correos del formulario -->
+                <form action="https://formspree.io/f/xyz" method="POST">
+                    <label>Nombre</label>
+                    <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="correo@empresa.com" required>
+
+                    <label>Asunto</label>
+                    <input type="text" name="asunto" placeholder="Motivo del contacto" required>
+
+                    <label>Mensaje</label>
+                    <textarea name="mensaje" placeholder="Escribe aquí..." required></textarea>
+
+                    <button type="submit" class="btn-enviar">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
 </body>
 </html>
